@@ -1,0 +1,37 @@
+{
+  "prompts": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "label": "Project name"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "label": "Project description",
+      "default": "A Vue component"
+    },
+    "author": {
+      "type": "string",
+      "label": "Author"
+    },
+    "type": {
+      "type": "list",
+      "message": "Choose a template type?",
+      "choices": [
+        "base",
+        "lego"
+      ],
+      "default":"base"
+    },
+    "license": {
+      "type": "string",
+      "label": "License",
+      "default": "MIT"
+    }
+  },
+  "filters": {
+    "src/schema.json": "type === 'lego'"
+  },
+  "completeMessage": "{{#inPlace}}To get started:\n\n  npm install\n  npm run serve{{else}}To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run serve{{/inPlace}}"
+}
