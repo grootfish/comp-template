@@ -19,7 +19,7 @@ $ npm install -g @vue/cli-init
 
 - Initial component/library
 ``` bash
-$ vue init ./component-template my-project
+$ vue init ./pc-template my-project
 $ cd my-project
 $ npm install
 $ npm run serve
