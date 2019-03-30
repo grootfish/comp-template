@@ -17,6 +17,8 @@ export default {
 </script>
 
 <style>
+/* 引入confront */
+@import "https://cdn.zcy.gov.cn/zcy-font/front-business-icon.css";
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

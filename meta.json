@@ -23,11 +23,6 @@
         "lego"
       ],
       "default":"base"
-    },
-    "license": {
-      "type": "string",
-      "label": "License",
-      "default": "MIT"
     }
   },
   "filters": {
