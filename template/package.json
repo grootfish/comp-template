@@ -1,7 +1,7 @@
 {
   "name": "@{{type}}/{{ name }}",
   "description": "{{ description }}",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "{{ author }}",
   "license": "{{ license }}",
   "main": "src/index.js",
