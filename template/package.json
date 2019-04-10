@@ -12,7 +12,7 @@
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name index --dest lib src/index.js",
     "preversion": "npm run lint",
-    "version": "npm run lib && git commit -a -m 'npm version'",
+    "version": "npm run lib && git add -A",
     "postversion": "npm publish && git push && git push --tags"
   },
   "files": [
