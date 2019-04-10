@@ -42,4 +42,5 @@
      - `/examples/App.vue`目录默认已引入组件，调整`props`调试组件
   5. 开发完成
      - `npm run lib` 打包组件
-     - 修改`package.json`中的版本号,`git tag -a 1.0.x`
+     - `npm version patch/minor/major` 更新版本号
+     - `npm publish`发包
