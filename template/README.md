@@ -24,12 +24,16 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name index --dest lib src/index.js"
+    "lib": "vue-cli-service build --target lib --name index --dest lib src/index.js",
+    "preversion": "npm run lint",
+    "version": "npm run lib && git add -A",
+    "postversion": "npm publish && git push && git push --tags"
 ```
 
 - `npm run serve` 组件开发启动热加载
 - `npm run lint`  组件eslint检测
 - `npm run lib`   编译压缩并输出组件
+- `npm version`   在更新 version 的时候添加了`hooks`
 
 ## 🏛开发步骤
 
@@ -43,4 +47,3 @@
   5. 开发完成
      - `npm run lib` 打包组件
      - `npm version patch/minor/major` 更新版本号
-     - `npm publish`发包
