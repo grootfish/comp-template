@@ -17,7 +17,7 @@ module.exports = {
         {
           from: path.resolve(__dirname, "./src/"),
           to: path.resolve(__dirname, "./lib"),
-          ignore: ["*.js", "*.vue", "*.less"]
+          ignore: ["*.js", "*.vue"]
         }
       ])
     ]
