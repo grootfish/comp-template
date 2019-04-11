@@ -6,6 +6,10 @@
   "license": "{{ license }}",
   "main": "src/index.js",
   "private": false,
+  {{#if_equal type 'lego'}}
+  "alias":"{{ alias }}",
+  "thumb":"预览图需要手动截图后上传",
+  {{/if_equal}}
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
