@@ -13,7 +13,7 @@
 ├── node_modules                 # npm 包
 ├── package-lock.json
 ├── package.json
-├── src                     # 组件开发目录
+├── src                          # 组件开发目录
 ├── public
 └── vue.config.js                # 扩展配置文件
 ```
