@@ -26,6 +26,13 @@ module.exports = {
       "type": "string",
       "message": "提供组件描述展示给运营（建议使用中文）",
       "default": "PC端搭建组件"
+    },
+    "category":{
+      "when": "type === 'lego'",
+      "type": "list",
+      "message": "装修修组件类型?",
+      "choices": ["component", "layout"],
+      "default": "component"
     }
   },
   "filters": {
