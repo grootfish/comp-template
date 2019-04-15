@@ -9,7 +9,7 @@
   {{#if_equal type 'lego'}}
   "alias":"{{ alias }}",
   "thumb":"预览图需要手动截图后上传",
-  "type":"{{ category }}"
+  "type":"{{ category }}",
   {{/if_equal}}
   "scripts": {
     "serve": "vue-cli-service serve",
