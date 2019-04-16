@@ -8,7 +8,6 @@
 <script>
 {{#if_equal type 'lego'}}
   import schema from './schema';
-  const { data } = schema.formData;
 {{/if_equal}}
 const prefixCls = "{{type}}-{{name}}";
 
