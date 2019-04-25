@@ -1,5 +1,8 @@
 <template>
-  <div id="app"><{{type}}-{{name}} /></div>
+  <div id="app">
+     <img class="greet" src="https://sitecdn.zcy.gov.cn/zcy-front-other-upload/cab6279591fc585bac108ae5b7402294.gif" alt="">
+    <{{type}}-{{name}} />
+  </div>
 </template>
 
 <script>
@@ -22,6 +25,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   padding: 40px;
+  .greet{
+    width:60%;
+    margin: 0 auto;
+  }
 }
 * {
   box-sizing: border-box;
