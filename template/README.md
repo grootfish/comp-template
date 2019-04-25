@@ -21,7 +21,7 @@
 ## 💻项目命令
 
 ```bash
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name index --dest lib src/index.js",
