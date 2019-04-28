@@ -1,37 +1,114 @@
 {
-  "formData": {
-      "data": {
-          "group": "模块数据配置",
-          "title": "卡片样式设置",
-          "fields": [
-              {
-                "name": "title",
-                "title": "卡片头部title",
-                "type": "text"
-              },{
-                "name":"disHover",
-                "title":"是否hover展示阴影",
-                "type":"radio"
-              },{
-                "name":"bordered",
-                "title":"是否展示边框",
-                "type":"radio"
-              },{
-                "name":"padding",
-                "title":"卡片内边距",
-                "type":"number"
-              }
-          ],
-          "minRow": 1,
-          "maxRow": 3,
-          "models": [
-              {
-                "title":"卡片展示",
-                "disHover":false,
-                "bordered":true,
-                "padding":16
-              }
-          ]
+  "props": {
+    "mainSupplierList": {
+      "group": "推荐供应商组件",
+      "title": "供应商列表",
+      "fields": [{
+          "name": "supplierId",
+          "title": "供应商ID",
+          "type": "string"
+        },
+        {
+          "name": "supplierLogoImage",
+          "title": "供应商品牌Logo",
+          "type": "string"
+        },
+        {
+          "name": "supplierName",
+          "title": "供应商名称",
+          "type": "string"
+        }
+      ],
+      "minRow": 4,
+      "maxRow": 4
+    },
+    "a": {
+      "group": "自定义组",
+      "title": "自定义属性1",
+      "isFiledset": true,
+      "fields": [{
+          "name": "number",
+          "title": "数量",
+          "type": "number"
+        },
+        {
+          "name": "image",
+          "title": "图片",
+          "type": "image"
+        },
+        {
+          "name": "select",
+          "title": "下拉框",
+          "type": "select",
+          "data":{
+            "1":"早饭",
+            "2":"中饭",
+            "3":"晚饭"
+          }
+        },
+        {
+          "name": "boolean",
+          "title": "布尔值",
+          "type": "boolean"
+        }
+      ]
+    },
+    "b": {
+      "group": "自定义组",
+      "title": "自定义属性12",
+      "isFiledset": true,
+      "fields": [{
+          "name": "date",
+          "title": "日期",
+          "type": "date"
+        },
+        {
+          "name": "time",
+          "title": "时间",
+          "type": "time"
+        },
+        {
+          "name": "dateTime",
+          "title": "日期时间",
+          "type": "dateTime"
+        },
+        {
+          "name": "color",
+          "title": "颜色",
+          "type": "color"
+        }
+      ]
+    }
+  },
+  "models": {
+    "mainSupplierList": [{
+        "supplierId": "1",
+        "supplierLogoImage": "https://sitecdn.zcy.gov.cn/lunatone/images/other-images/banner-qyg-4.png",
+        "supplierName": "苏宁"
+      },
+      {
+        "supplierId": "2",
+        "supplierLogoImage": "https://sitecdn.zcy.gov.cn/lunatone/images/other-images/banner-qyg-4.png",
+        "supplierName": "苏宁"
+      },
+      {
+        "supplierId": "3",
+        "supplierLogoImage": "https://sitecdn.zcy.gov.cn/lunatone/images/other-images/banner-qyg-4.png",
+        "supplierName": "苏宁"
+      },
+      {
+        "supplierId": "4",
+        "supplierLogoImage": "https://sitecdn.zcy.gov.cn/lunatone/images/other-images/banner-qyg-4.png",
+        "supplierName": "苏宁"
       }
+    ],
+    "number": 1,
+    "image": "https://sitecdn.zcy.gov.cn/lunatone/images/other-images/banner-qyg-4.png",
+    "select": "1",
+    "boolean": true,
+    "date": "2019-04-17",
+    "time": "14:46:00",
+    "dateTime": 1478059691636,
+    "color": "#f03"
   }
 }
