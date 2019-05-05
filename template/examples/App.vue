@@ -1,7 +1,7 @@
 <template>
   <div id="app">
      <img class="greet" src="https://sitecdn.zcy.gov.cn/zcy-front-other-upload/cab6279591fc585bac108ae5b7402294.gif" alt="">
-    <{{type}}-{{name}} />
+    <{{type}}-{{name}} msg="Nice to meet you!"/>
   </div>
 </template>
 

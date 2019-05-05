@@ -1,6 +1,7 @@
 <template>
   <div :class="classes">
-    Hello! {{name}}
+    Hello! {{name}} 
+    <span v-html="msg"></span>
     <br>
     {{description}}
   </div>
@@ -15,7 +16,9 @@ export default {
   name: "{{type}}-{{name}}",
   components: {},
   // 组件props
-  props: {},
+  props: {
+    msg:String
+  },
   // 组件 state
   data() {
     return {};

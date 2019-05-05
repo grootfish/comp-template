@@ -43,5 +43,5 @@ module.exports = {
       return (v1 == v2) ? options.fn(this) : options.inverse(this);
     }
   },
-  "completeMessage": "{{#inPlace}}To get started:\n\n  npm install\n  npm run serve{{else}}To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run serve{{/inPlace}}"
+  "completeMessage": "{{#inPlace}}To get started:\n\n  npm install\n  npm run dev{{else}}To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev{{/inPlace}}"
 }
