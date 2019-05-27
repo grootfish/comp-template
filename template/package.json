@@ -8,7 +8,7 @@
   "private": false,
   {{#if_equal type 'lego'}}
   "alias":"{{ alias }}",
-  "thumb":"预览图需要手动截图添加图片地址使用使用双斜杠开头",
+  "thumb":"{{ thumb }}",
   "type":"{{ category }}",
   {{/if_equal}}
   "scripts": {

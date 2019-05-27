@@ -21,6 +21,11 @@ module.exports = {
       "choices": ["base", "lego"],
       "default": "base"
     },
+    "thumb": {
+      "when": "type === 'lego'",
+      "type": "string",
+      "message": "提供组件缩略图展示，图片大小限制🚫在140*140",
+    },
     "alias": {
       "when": "type === 'lego'",
       "type": "string",
